@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+// Primary
+$orange: rgb(251, 116, 19);
+
+// Neutral
+$White: hsl(0, 0%, 100%);
+$LightGrey: hsl(217, 12%, 63%);
+$MediumGrey: hsl(216, 12%, 54%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+
+
+:root {
+    font-size: 15px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: $VeryDarkBlue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $White;
+
+    section {
+        background-color: $DarkBlue;
+        padding: 30px;
+        width: 370px;
+        border-radius: 20px;
+
+        .star {
+            margin-bottom: 30px;
+            background-color: hsl(216, 12%, 24%);
+            padding: 15px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            color: $White;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: $LightGrey;
+            line-height: 23px;
+            margin-bottom: 20px;
+        }
+
+        .container_number {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+
+            button {
+                background-color: hsl(216, 12%, 24%);
+                color: $LightGrey;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: none;
+                font-size: 1rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $orange !important;
+                    color: $White !important;
+                    transition: 100ms ease !important;
+                }
+
+            }
+        }
+
+        .submit {
+            width: 100%;
+            height: 45px;
+            border-radius: 30px;
+            border: none;
+            font-weight: bold;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            background-color: $orange;
+            color: $White;
+            cursor: pointer;
+            transition: 100ms ease;
+
+            &:hover {
+                background-color: $White;
+                color: rgb(255, 136, 0);
+            }
+        }
+
+        .submit_click {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            display: none;
+
+            .img_tel {
+                margin-bottom: 10px;
+            }
+
+            .select_para {
+                background-color: hsl(216, 12%, 24%);
+                color: $orange;
+                border-radius: 20px;
+                padding: 5px 15px;
+            }
+
+            p {
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
